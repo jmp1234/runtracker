@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.runs {
+  height: 90%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.backgroundImage {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  object-fit: cover;
+  opacity: 0.75;
+  position: fixed;
+  top: 10vh;
+}
+
+.runButtonsContainer {
+  top: 10vh;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.imgContainer {
+  height: 30vh;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .bigSquareButton {
+    opacity: 0.8;
+    height: 19vh;
+    width: 19vh;
+  }
+}
+
+.runImg {
+  background-image: url('./images/running-icon.png');
+  background-size: contain;
+}
+
+.plusImg {
+  background-image: url('./images/plus.png');
+  background-position: center;
+  background-size: 50% 50%;
+}
+
+.runImg,
+.plusImg {
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 100%;
+  opacity: 1;
+}
+
+.run-time {
+  font-size: 0.8rem;
+}
+
+.tutorialButton {
+  z-index: 1;
+  position: absolute;
+}
+
+
+@media (max-width: 600px) {
+  .runs {
+    .runImg {
+      font-size: 1rem;
+    }
+
+    .runs {
+      .run-time {
+        font-size: 0.7rem;
+      }
+    }
+  }
+  .imgContainer {
+    .bigSquareButton {
+      height: 18vh;
+      width: 18vh;
+    }
+  }
+}
+@media (max-width: 330px) {
+  .imgContainer {
+    .bigSquareButton {
+      height: 20vh;
+      width: 20vh;
+    }
+  }
+}
+
+@media (max-height: 530px) {
+  .imgContainer {
+
+    .bigSquareButton {
+      height: 100px;
+      width: 100px;
+    }
+  }
+}
+
+@media (max-height: 479px) {
+  .imgContainer {
+    height: 150px;
+  }
+  .run-time {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .backgroundImage {
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+@media only screen
+  and (max-device-width: 1000px)
+  and (orientation: landscape) {
+    .imgContainer {
+      height: 30vh;
+      width: 80vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .bigSquareButton {
+        opacity: 0.8;
+        height: 25vh;
+        width: 30vh;
+      }
+    }
+}
+
+@media only screen and (max-device-width: 850px) and (orientation: landscape) {
+
+  .backgroundImage {
+    top: 16vh;
+  }
+
+  .runButtonsContainer {
+    top: 16vh;
+  }
+}

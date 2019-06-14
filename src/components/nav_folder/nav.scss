@@ -1,0 +1,222 @@
+.mapHeaderContainer {
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    background-color: #81b3c2;
+}
+
+.fixed-top{
+    display: static !important;
+}
+
+.navLogo {
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    letter-spacing: 1px;
+}
+
+.questionMark {
+    cursor: pointer;
+}
+
+.questionMark:hover {
+    color: blue;
+}
+
+.nav-link-home,
+.nav-link-aboutus,
+.nav-link-logout,
+.questionMark {
+    color: white;
+    position: absolute;
+}
+
+
+.nav-link-home {
+    right: 16%;
+}
+
+.nav-link-aboutus {
+    right: 10%;
+}
+
+.nav-link-logout {
+    right: 4%;
+}
+
+.questionMark {
+    left: 4%;
+}
+
+.nav-link {
+    font-size: 1em;
+    text-align: center;
+    padding: 0;
+    color: white;
+}
+
+.nav-link.selected {
+    background-color: rgb(36, 173, 242);
+    color: white;
+}
+
+.textContainer {
+    position: relative;
+    top: 7px;
+}
+
+.navHeight {
+    height: 100%;
+
+    .navbar-nav {
+        height: 100%;
+    }
+}
+
+.navbar-custom {
+    background-color: #586F7C;
+    height: 5vh;
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 1px 5px 0px;
+
+    a {
+        color: rgb(255, 255, 255);
+    }
+
+    a:hover {
+        color: rgb(255, 255, 255);
+    }
+
+    .nav>li:hover {
+        background-color: rgb(36, 173, 242);
+    }
+}
+
+.navbar {
+    padding: 0;
+    top: 5vh;
+
+    .nav {
+        display: table;
+        width: 100%;
+        line-height: 5vh;
+
+        li {
+            display: table-cell;
+            width: 33.33%;
+
+            a {
+                height: 100%;
+                border-left: 1px solid rgb(255, 255, 255);
+            }
+        }
+
+        li:first-child a {
+            border-left: 0;
+        }
+    }
+}
+
+li.nav-link {
+    border-left: 1px solid rgb(255, 255, 255);
+}
+
+ul li:first-child {
+    border-left: 0;
+}
+
+.modal-content2 {
+    border: transparent;
+    background-color: white;
+    height: 40vh;
+
+}
+
+.close {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+.modal-container {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    align-self: center;
+    right: 0%;
+}
+
+.modal-title {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.modal-footer {
+    justify-content: center;
+    border-top: transparent;
+    padding: 0;
+}
+
+.modalSize {
+    height: 75vh;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-device-width: 1000px) and (orientation: landscape) {
+    .modal-content2 {
+        border: transparent;
+        background-color: white;
+        height: 50vh;
+    }
+
+    .modal-container {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        align-self: center;
+    }
+}
+
+@media only screen and (max-device-width: 850px) and (orientation: landscape) {
+
+    .mapHeaderContainer {
+      height: 8vh;
+    }
+
+    .navbar {
+      top: 8vh;
+
+      .nav {
+        line-height: 8vh;
+      }
+    }
+
+    .navbar-custom {
+      height: 8vh;
+    }
+}

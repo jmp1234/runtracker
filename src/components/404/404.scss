@@ -1,0 +1,42 @@
+.background404 {
+    opacity: 0.95;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.not-found-content {
+    height: 95vh;
+    width: 100%;
+    position: absolute;
+    top: 5vh;
+    text-align: center;
+}
+
+.homeIcon {
+    color: white;
+    font-size: 4em;
+}
+
+.error {
+    position: absolute;
+    top: 47.5%;
+    left: 50%;
+    transform: translate(-50%, -47.5%);
+    color: white;
+    width: 80%;
+}
+
+.errorTitle {
+    font-size: 100pt;
+}
+
+.pageNotFound {
+    text-transform: uppercase;
+    font-size: 18pt;
+    letter-spacing: 1pt;
+}
+
+.sorry {
+    margin: 20pt 0;
+}

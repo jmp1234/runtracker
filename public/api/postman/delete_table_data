@@ -1,0 +1,6 @@
+POST
+http://localhost:3000/api/delete_table_data.php
+Body: raw
+
+
+{"run_id":22} <<< test id # that you want to delete_table_data

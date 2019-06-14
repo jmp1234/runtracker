@@ -1,0 +1,71 @@
+.logoutContainer {
+    display: flex;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.65;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 414px) {
+    .logoutLogo {
+        width: 40vh;
+        position: absolute;
+        top: 28%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .thankYou {
+        font-size: 13pt;
+        text-align: center;
+        text-shadow: 2px 2px 4px white;
+        position: absolute;
+        top: 58%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+@media screen and (min-width: 415px) and (max-width: 1023px) {
+    .logoutLogo {
+        width: 54vh;
+        position: absolute;
+        top: 22%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .thankYou {
+        font-size: 15pt;
+        text-align: center;
+        text-shadow: 2px 2px 4px white;
+        position: absolute;
+        top: 68%;
+        left: 50%;
+        transform: translate(-50%);
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .logoutLogo {
+        width: 54vh;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .thankYou {
+        font-size: 20pt;
+        text-align: center;
+        text-shadow: 2px 2px 4px white;
+        position: absolute;
+        top: 64%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}

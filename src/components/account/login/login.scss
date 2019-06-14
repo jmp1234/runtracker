@@ -1,0 +1,814 @@
+.loginPage {
+    overflow: hidden;
+}
+
+.carousel {
+    height: 100vh;
+}
+
+.carousel-indicators,
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 0;
+    display: none;
+}
+
+.right.carousel-control,
+.left.carousel-control {
+    display: none;
+}
+
+.d-block {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    opacity: 0.85;
+}
+
+.loginButtonsContainer {
+    position: absolute;
+    z-index: 2;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    transition: none;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.errorMessage {
+    font-size: 14px;
+    position: absolute;
+    width: 100vw;
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.transitionBackground {
+    width: 100vw;
+    background: black;
+    opacity: 0.5;
+    z-index: 2;
+    position: fixed;
+    bottom: 0%;
+}
+
+.loginTransition,
+.signupTransition {
+    background: #EBEBEB;
+    border-radius: 10px;
+    z-index: 3;
+    position: absolute;
+    left: 50%;
+    // top: 50%;
+    transform: translate(-50%);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: height 1s, bottom 1.8s;
+
+    .hidden {
+        display: none;
+    }
+}
+
+.loginTransition {
+    width: 30vw;
+    height: 50vh;
+    bottom: 25vh;
+}
+
+.signupTransition {
+    width: 30vw;
+    height: 85vh;
+    bottom: 7.5vh;
+}
+
+.loginFormContainer {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loginModalTitle {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.inputFieldsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // width: 60vw;
+    // max-width: 300px;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+
+    .input-field {
+        margin-bottom: 10%;
+    }
+
+    .inputFields {
+        height: 36px;
+        width: 250px;
+        padding: 0 5px;
+        font-size: 11pt;
+    }
+}
+
+.btn-info {
+    border-radius: 0px;
+}
+
+@media screen and (min-width: 1281px) {
+    .loginLogo {
+        width: 72vh;
+        position: absolute;
+        top: 16%;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 2;
+    }
+
+    .loginButtonsContainer {
+        top: 68%;
+    }
+
+    .loginButton {
+        margin: 5px;
+        font-size: 18px;
+        text-transform: uppercase;
+        width: 115px;
+        height: 44px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .loginLogo {
+        width: 54vh;
+        position: absolute;
+        top: 22%;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 2;
+    }
+
+    .loginButton {
+        margin: 5px;
+        font-size: 15px;
+        text-transform: uppercase;
+        width: 120px;
+    }
+
+    .loginTransition {
+        width: 40vw;
+        height: 50vh;
+        bottom: 25vh;
+    }
+
+    .signupTransition {
+        width: 40vw;
+        height: 90vh;
+        bottom: 5vh;
+    }
+
+    .inputFieldsContainer {
+        margin: 20px 0;
+
+        .input-field {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .loginButton {
+        margin: 6px;
+        height: 45px;
+    }
+
+    .loginTransition {
+        width: 45vw;
+        // height: 50vh;
+        // bottom: 25vh;
+    }
+
+    .signupTransition {
+        width: 44vw;
+        // height: 52vh;
+        // bottom: 24vh;
+    }
+
+    .inputFieldsContainer {
+        .input-field {
+            margin-bottom: 28px;
+        }
+
+        .inputFields {
+            width: 250px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .inputFieldsContainer {
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+        // max-width: 300px;
+        border-radius: 5px;
+    }
+
+    .inputFieldsContainer input {
+        font-size: 11pt;
+        height: 36px;
+        width: 250px;
+        padding: 0px 8px;
+    }
+
+    .errorMessage {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .loginButton {
+        width: 18vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .loginLogo {
+        width: 55vh;
+        position: absolute;
+        top: 22%;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 2;
+    }
+
+    .loginButtonsContainer {
+        top: 64%;
+    }
+
+    .loginButton {
+        margin: 4px;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    .loginTransition {
+        width: 60vw;
+        height: 45vh;
+        bottom: 27.5vh;
+    }
+
+    .signupTransition {
+        width: 60vw;
+        height: 80vh;
+        bottom: 10vh;
+    }
+
+    .loginModalTitle {
+        font-size: 20px;
+    }
+
+    .inputFieldsContainer {
+        margin-top: 20px;
+        margin-bottom: 8px;
+
+        .input-field {
+            margin-bottom: 28px;
+        }
+
+        input {
+            width: 250px;
+        }
+    }
+
+    .errorMessage {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-height: 670px) {
+    .inputFieldsContainer {
+        .inputFields {
+            height: 28px;
+        }
+
+        .input-field {
+            margin-bottom: 24px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    .inputFieldsContainer {
+        .input-field {
+            margin-bottom: 20px;
+        }
+
+        .inputFields {
+            height: 25px;
+        }
+    }
+}
+
+@media only screen and (max-width: 823px) and (orientation: landscape) {
+    .loginLogo {
+        width: 74vh;
+        top: 12%
+    }
+
+    .loginButtonsContainer {
+        top: 64%;
+    }
+
+    .loginButton {
+        margin: 2px;
+        font-size: 12px;
+        width: 78px;
+        height: 36px;
+    }
+
+    .loginTransition {
+        width: 45vw;
+        height: 82vh;
+        bottom: 9vh;
+    }
+
+    .signupTransition {
+        width: 64vw;
+        height: 88vh;
+        bottom: 6vh;
+    }
+
+    .loginFormContainer {
+        height: 100%;
+        width: 100%;
+    }
+
+    form {
+        height: 85%;
+        top: 7.5%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .loginModalTitle {
+        font-size: 20px;
+    }
+
+    .inputFieldsContainer {
+        width: 88%;
+        flex-wrap: wrap;
+        overflow-y: auto;
+        margin: 16px 0 0 0;
+
+        .input-field {
+            margin-bottom: 22px;
+        }
+
+        .inputFields {
+            width: 200px;
+            height: 32px;
+        }
+    }
+
+    .errorMessage {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 812px) and (orientation: landscape) {
+    form {
+        height: 87%;
+        top: 6.5%;
+    }
+
+    .inputFieldsContainer {
+        .inputFields {
+            height: 28px;
+        }
+    }
+}
+
+@media only screen and (max-width: 736px) and (orientation: landscape) {
+    .signupTransition {
+        width: 68vw;
+    }
+
+    form {
+        height: 84%;
+        top: 8%;
+    }
+
+    .inputFieldsContainer {
+        .inputFields {
+            width: 200px;
+            height: 32px;
+        }
+    }
+}
+
+@media only screen and (max-width: 667px) and (orientation: landscape) {
+    form {
+        height: 87%;
+        top: 6.5%;
+    }
+
+    .inputFieldsContainer {
+        width: 90%;
+
+        .inputFields {
+            width: 180px;
+            height: 28px;
+        }
+    }
+}
+
+@media screen and (max-width: 651px) {
+    .inputFieldsContainer {
+        input {
+            height: 28px;
+        }
+    }
+}
+
+@media only screen and (max-width: 640px) and (orientation: landscape) {
+    .loginButton {
+        height: 30px;
+    }
+
+    form {
+        height: 90%;
+        top: 5%;
+    }
+}
+
+@media only screen and (max-width: 568px) and (orientation: landscape) {
+    .signupTransition {
+        width: 75vw;
+    }
+
+    .loginModalTitle {
+        font-size: 18px;
+    }
+
+    .inputFieldsContainer {
+        .input-field {
+            margin-bottom: 19px;
+        }
+
+        .inputFields {
+            width: 170px;
+            height: 26px;
+        }
+    }
+
+    .errorMessage {
+        font-size: 10px;
+    }
+
+    .signUpModalButton {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 560px) and (orientation: landscape) {
+    .loginLogo {
+        width: 72vh;
+        top: 14%
+    }
+
+    .loginButtonsContainer {
+        top: 64%;
+    }
+
+    .loginButton {
+        margin: 2px;
+        font-size: 12px;
+        width: 78px;
+        height: 30px;
+    }
+
+    .loginModalTitle {
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .inputFieldsContainer {
+        display: flex;
+        flex-direction: column;
+        width: 20vw;
+        border-radius: 5px;
+    }
+
+    .inputFields input {
+        font-size: 12px;
+        height: 20px;
+        padding: 0px 5px;
+    }
+
+    .errorMessage {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 480px) and (orientation: landscape) {
+    .loginLogo {
+        width: 64vh;
+        top: 16%
+    }
+
+    .loginButtonsContainer {
+        top: 64%;
+    }
+
+    .loginButton {
+        margin: 2px;
+        font-size: 10px;
+        width: 72px;
+        height: 26px;
+    }
+
+    .signupTransition {
+        width: 80vw;
+    }
+
+    .loginModalTitle {
+        font-size: 18px;
+    }
+
+    .inputFieldsContainer {
+        width: 90%;
+        margin: 14px 0 0 0;
+
+        .input-field {
+            margin-bottom: 16px;
+        }
+
+        .inputFields {
+            width: 150px;
+            height: 28px;
+        }
+    }
+
+    .errorMessage {
+        font-size: 10px;
+    }
+
+    .signUpModalButton {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 414px) and (max-height: 823px) {
+    .loginLogo {
+        width: 42vh;
+        top: 28%;
+    }
+
+    .loginButton {
+        width: 22vw;
+    }
+
+    .loginTransition {
+        width: 75vw;
+        height: 40vh;
+        bottom: 30vh;
+    }
+
+    .signupTransition {
+        width: 75vw;
+        height: 60vh;
+        bottom: 20vh;
+    }
+
+    .inputFieldsContainer {
+        margin-top: 20px;
+        margin-bottom: 8px;
+
+        input {
+            width: 230px;
+        }
+    }
+}
+
+@media screen and (max-width: 414px) and (max-height: 736px) {
+    .loginLogo {
+        width: 50vh;
+        top: 24%;
+    }
+
+    .loginButton {
+        width: 22vw;
+    }
+
+    .loginTransition {
+        width: 75vw;
+        height: 44vh;
+        bottom: 28vh;
+    }
+
+    .signupTransition {
+        width: 75vw;
+        height: 70vh;
+        bottom: 15vh;
+    }
+
+    .inputFieldsContainer {
+        margin-top: 20px;
+        margin-bottom: 8px;
+
+        input {
+            width: 230px;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) and (max-height: 812px) {
+    .loginLogo {
+        width: 40vh;
+        top: 28%;
+    }
+
+    .loginButtonsContainer {
+        top: 60%;
+    }
+
+    .loginButton {
+        width: 24vw;
+    }
+
+    .loginTransition {
+        width: 80vw;
+        height: 40vh;
+        bottom: 30vh;
+    }
+
+    .signupTransition {
+        width: 80vw;
+        height: 65vh;
+        bottom: 17.5vh;
+    }
+
+    .inputFieldsContainer {
+        margin-top: 20px;
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (max-width: 375px) and (max-height: 667px) {
+    .loginButton {
+        width: 24vw;
+    }
+
+    .loginTransition {
+        width: 80vw;
+        height: 45vh;
+        bottom: 27.5vh;
+    }
+
+    .signupTransition {
+        width: 75vw;
+        height: 70vh;
+        bottom: 15vh;
+    }
+
+    .inputFieldsContainer {
+        margin-top: 16px;
+        margin-bottom: 4px;
+
+        .inputFields {
+            width: 220px;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .loginButton {
+        width: 24vw;
+    }
+
+    .loginTransition {
+        width: 75vw;
+        height: 45vh;
+        bottom: 27.5vh;
+    }
+
+    .signupTransition {
+        width: 80vw;
+        height: 90vh;
+        bottom: 5vh;
+    }
+
+    .inputFieldsContainer {
+        .input-field {
+            margin-bottom: 26px;
+        }
+
+        .inputFields {
+            width: 200px;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) and (max-height:568px) {
+    .loginButton {
+        height: 35px;
+        width: 24vw;
+        font-size: 12px;
+        margin: 3px;
+    }
+
+    .loginTransition {
+        width: 85vw;
+        height: 50vh;
+        bottom: 25vh;
+    }
+
+    .signupTransition {
+        width: 85vw;
+        height: 90vh;
+        bottom: 5vh;
+    }
+
+    .loginModalTitle {
+        font-size: 16px;
+    }
+
+    .inputFieldsContainer {
+        margin-top: 15px;
+        margin-bottom: 6px;
+
+        .input-field {
+            margin-bottom: 20px;
+        }
+
+        input {
+            height: 25px;
+            width: 200px;
+        }
+    }
+
+    .errorMessage {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 320px) and (max-height:480px) {
+    .loginButton {
+        height: 30px;
+        margin: 4px;
+    }
+
+    .loginTransition {
+        width: 85vw;
+        height: 55vh;
+        bottom: 22.5vh;
+    }
+
+    .signupTransition {
+        width: 85vw;
+        height: 95vh;
+        bottom: 2.5vh;
+    }
+
+    .loginModalTitle {
+        font-size: 16px;
+    }
+
+    .inputFieldsContainer {
+        margin-top: 15px;
+        margin-bottom: 6px;
+
+        .inputFields {
+            height: 25px;
+            width: 200px;
+        }
+    }
+
+    .errorMessage {
+        font-size: 12px;
+    }
+}

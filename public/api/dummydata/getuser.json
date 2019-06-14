@@ -1,0 +1,49 @@
+{
+    "success": true,
+    "users": [
+        {
+            "first_name": "Alice",
+            "last_name": "Le",
+            "gender": "female",
+            "age": "30",
+            "height": "63",
+            "weight": "120",
+            "email": "alicele@email.com",
+            "password": "password1",
+            "id": 1
+        },
+        {
+            "first_name": "Jaime",
+            "last_name": "Kim",
+            "gender": "female",
+            "age": "28",
+            "height": "66",
+            "weight": "130",
+            "email": "jaimekim@email.com",
+            "password": "password2",
+            "id": 2
+        },
+        {
+            "first_name": "Johnny",
+            "last_name": "Pham",
+            "gender": "male",
+            "age": "22",
+            "height": "70",
+            "weight": "150",
+            "email": "johnnypham@email.com",
+            "password": "password3",
+            "id": 3
+        },
+        {
+            "first_name": "David",
+            "last_name": "Lee",
+            "gender": "male",
+            "age": "28",
+            "height": "68",
+            "weight": "150",
+            "email": "davidlee@email.com",
+            "password": "password4",
+            "id": 4
+        }
+    ]
+}

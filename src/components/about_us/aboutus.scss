@@ -1,0 +1,68 @@
+.aboutUsNav {
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    background-color: #81b3c2;
+
+    .navLogo {
+        color: white;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        letter-spacing: 1px;
+    }
+
+    .nav-link-home,
+    .nav-link-aboutus,
+    .nav-link-logout {
+        color: white;
+        position: absolute;
+    }
+}
+
+.nav-link-home {
+    right: 18%;
+}
+
+.nav-link-aboutus {
+    right: 12%;
+}
+
+.nav-link-logout {
+    right: 6%;
+}
+
+.meetTheTeamContainer {
+    position: absolute;
+    top: 5vh;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100vw;
+}
+
+.meetTheTeam {
+    text-align: center;
+    font-size: 1.6em;
+    margin: 12px;
+}
+
+// .icon-container {
+//     margin: 10px;
+// }
+
+.linkedinIcon,
+.githubIcon,
+.portfolioIcon {
+    width: 12%;
+}
+
+.githubIcon {
+    margin: 5px;
+}
+
+@media only screen and (max-device-width: 850px) and (orientation: landscape) {
+
+  .aboutUsNav {
+    height: 8vh;
+  }
+}
